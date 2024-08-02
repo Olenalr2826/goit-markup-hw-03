@@ -1,4 +1,34 @@
+body {font-family: 'Roboto', sans-serif; color: #2E2F42; color: #434455; background-color: #ffffff; margin: 0;}
+
+/*reset*/
+
+ul {list-style-type: none;
+margin: 0;
+padding-left: 0;}
+    
+h1, h2, h3, h4, h5, h6, p {margin: 0;}
+
 a {text-decoration: none;}
+
+/*common*/
+
+.container {max-width: 1158px;
+padding: 0 15px;
+margin: 0 auto;}
+
+/*header*/
+
+.page-header{
+border-bottom: 1px solid #e7e9cf;}
+
+.header-container{
+display: flex;
+align-items: center;}
+
+.header-nav{
+display: flex;
+align-items: center;}
+
 .link-logo 
 {font-family: 'Raleway', sans-serif;
 font-weight: 700;
@@ -11,11 +41,27 @@ text-transform: uppercase;}
 .accent
 {color: #2e2f42;}
 
+.nav-list {
+display: flex; 
+align-items: center;
+gap: 40px;}
+
+.contacts-list {
+display: flex;
+align-items: center;
+gap: 40px;}
+
+.header-logo {
+padding: 24px 0;
+margin-right: 76px;}
+
 .accent-wish
 {color: #f4f4fd;}
 
 .link-list 
-{color: #2e2f42;
+{display: block;
+padding: 24px 0;
+color: #2e2f42;
 font-weight: 500;
 font-size: 16px;
 line-height: 1.5;
@@ -23,27 +69,37 @@ letter-spacing: 0.02em;}
 
 .link-list:hover, .link-list:focus {color: #404bbf;}
 
-.style-contact
-{font-style: normal;}
-.link-contact 
-{color: #434455;
+.style-contacts
+{font-style: normal;
+margin-left: auto;}
+
+.link-contacts 
+{display: block;
+padding: 24px 0;
+color: #434455;
 font-style: normal;
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;}
 
-.link-contact:hover, .link-contact:focus {color: #404bbf;}
+.link-contacts:hover, .link-contacts:focus {color: #404bbf;}
+
+.section {padding-top: 120px; padding-bottom: 120px;}
 
 .about
 {background-color: #2e2f42;}
 
 .page-title 
-{color: #ffffff;
+{box-sizing: border-box; width: 496px;
+color: #ffffff;
 font-size: 56px;
 font-weight: 700;
 line-height: 1.07;
 letter-spacing: 0.02em;
-text-align: center;}
+text-align: center;
+padding-top: 68px;
+margin-bottom: 48px;
+margin-left: 316px;}
 
 .button 
 {color: #ffffff; 
@@ -54,12 +110,21 @@ font-weight: 500;
 line-height: 1.5;
 letter-spacing: 0.04em;
 text-align: center;
-cursor: pointer;}
+cursor: pointer;
+padding: 16px 32px;
+border-radius: 4px;
+margin-left: 480px;}
 
 .button:hover {background-color: #404bbf;}
 .button:focus {background-color: #404bbf;}
 
-body {font-family: 'Roboto', sans-serif; color: #2E2F42; color: #434455; background-color: #ffffff;}
+.section-features {}
+
+.title-features {display: none;}
+
+.features {display: flex;
+gap: 24px;
+width: calc((100%-72px) / 4);}
 
 .features-title 
 {color: #2e2f42;
@@ -67,7 +132,10 @@ font-size: 20px;
 font-weight: 500;
 line-height: 1.2;
 letter-spacing: 0.02em;
-text-align: left;}
+text-align: left;
+margin-bottom: 8px;}
+
+.block-features {}
 
 .features-title-text
 {color: #434455;
@@ -87,10 +155,16 @@ font-weight: 700;
 line-height: 1.11;
 letter-spacing: 0.02em;
 text-align: center;
-text-transform: capitalize;}
+text-transform: capitalize;
+margin-bottom: 72px;}
+
+.item {display: flex;
+gap: 24px;}
 
 .list-team
 {background-color: #ffffff;}
+
+.block-foto-team {padding-bottom: 32px;}
 
 .name-title 
 {color: #2e2f42;
@@ -99,7 +173,8 @@ font-size: 20px;
 font-weight: 500;
 line-height: 1.2;
 letter-spacing: 0.02em;
-text-align: center;}
+text-align: center;
+padding-bottom: 8px;}
 
 .name-title-text 
 {background-color: #ffffff;
@@ -108,7 +183,10 @@ font-size: 16px;
 font-weight: 400;
 line-height: 1.5;
 letter-spacing: 0.02em;
-text-align: center;}
+text-align: center;
+padding-bottom: 32px;}
+
+.section-offer {}
 
 .offer
 {color: #2e2f42;
@@ -117,7 +195,15 @@ font-weight: 700;
 line-height: 1.11;
 letter-spacing: 0.02em;
 text-align: center;
-text-transform: capitalize;}
+text-transform: capitalize;
+padding-bottom: 72px;}
+
+.list-offer{display: flex; flex-wrap: wrap; gap: 24px; width: calc((100%-120px) / 6);}
+
+.list-offer-content {}
+
+.offer-content{flex-basis: auto;
+border-bottom: 1px solid #e7e9cf;}
 
 .offer-title
 {color: #2e2f42;
@@ -125,7 +211,8 @@ font-size: 20px;
 font-weight: 500;
 line-height: 1.2;
 letter-spacing: 0.02em;
-text-align: left;}
+text-align: left;
+margin-top: 32px; margin-right: auto; margin-bottom: 8px; margin-left: 16px;}
 
 .offer-title-text
 {color: #434455;
@@ -133,12 +220,13 @@ font-size: 16px;
 font-weight: 400;
 line-height: 1.5;
 letter-spacing: 0.02em;
-text-align: left;}
-
-ul {list-style-type: none;}
+margin-right: auto; margin-bottom: 32px; margin-left: 16px;}
 
 .wish 
 {background-color: #2e2f42;}
+
+.wish-container{width: 264px;
+padding: 100px; padding-right: 1020px; padding-left: auto;}
 
 .wish-text
 {color:#f4f4fd;
