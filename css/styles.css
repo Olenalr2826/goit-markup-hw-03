@@ -20,12 +20,11 @@ margin: 0 auto;}
 
 /*header*/
 
-.page-header{}
+.page-header{border-bottom: 1px solid #e7e9cf;}
 
 .header-container{
 display: flex;
-align-items: center;
-border-bottom: 1px solid #e7e9cf;}
+align-items: center;}
 
 .header-nav{
 display: flex;
@@ -178,8 +177,11 @@ gap: 24px;}
 
 .list-team
 {background-color: #ffffff;
-width: calc((100%-72px) / 4)
-border-radius 0px 0px 4px 4px;}
+width: calc((100%-3*24px) / 4);
+border-top-left-radius: 0px;
+border-top-right-radius: 0px;
+border-bottom-left-radius: 4px;
+border-bottom-right-radius: 4px;}
 
 .block-name-team {padding: 32px 0;}
 
@@ -214,13 +216,13 @@ text-align: center;
 text-transform: capitalize;
 margin-bottom: 72px;}
 
-.list-offer{display: flex; flex-wrap: wrap; gap: 24px; width: calc((100%-120px) / 6);
+.list-offer{display: flex; flex-wrap: wrap; gap: 24px; 
 row-gap: 48px;}
 
-.list-offer-content {width: calc((100%-48px) / 3)}
+.list-offer-content {width: calc((100%-2*24px) / 3)}
 
 .offer-content{flex-basis: auto;
-border-bottom: 1px solid #e7e9cf;
+border: 1px solid #e7e9cf;
 padding: 32px 16px;
 border-top: none;
 margin-bottom: 8px;}
@@ -243,15 +245,15 @@ letter-spacing: 0.02em;
 margin-right: auto; margin-bottom: 32px; margin-left: 16px;}
 
 .wish 
-{background-color: #2e2f42;}
+{background-color: #2e2f42; padding-top: 100px; padding-bottom: 100px;}
 
-.wish-container{width: 264px;
-padding: 100px; padding-right: 1020px; padding-bottom: 100px; padding-left: auto;}
+.wish-container {}
 
 .logo-footer{display: inline-block; margin-bottom: 16px;}
 
 .wish-text
-{color:#f4f4fd;
+{max-width: 264px;
+color:#f4f4fd;
 font-size: 16px;
 font-weight: 400;
 line-height: 1.5;
