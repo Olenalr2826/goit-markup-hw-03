@@ -20,7 +20,7 @@ margin: 0 auto;}
 
 /*header*/
 
-.page-header{border-bottom: 1px solid #e7e9cf;}
+.page-header{border-bottom: 1px solid #e7e9fc;}
 
 .header-container{
 display: flex;
@@ -138,7 +138,7 @@ overflow: hidden;}
 .features {display: flex;
 gap: 24px;}
 
-.list-features {width: calc((100%-72px) / 4);}
+.list-features {width: calc((100% - 72px) / 4);}
 
 .features-title 
 {color: #2e2f42;
@@ -177,7 +177,7 @@ gap: 24px;}
 
 .list-team
 {background-color: #ffffff;
-width: calc((100%-3*24px) / 4);
+width: calc((100% - 3*24px) / 4);
 border-top-left-radius: 0px;
 border-top-right-radius: 0px;
 border-bottom-left-radius: 4px;
@@ -219,10 +219,10 @@ margin-bottom: 72px;}
 .list-offer{display: flex; flex-wrap: wrap; gap: 24px; 
 row-gap: 48px;}
 
-.list-offer-content {width: calc((100%-2*24px) / 3)}
+.list-offer-content {width: calc((100% - 2 * 24px) / 3);}
 
-.offer-content{flex-basis: auto;
-border: 1px solid #e7e9cf;
+.offer-content{box-sizing: border-box; max-width: 360px;
+border: 1px solid #e7e9fc;
 padding: 32px 16px;
 border-top: none;
 margin-bottom: 8px;}
