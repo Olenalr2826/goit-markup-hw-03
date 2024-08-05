@@ -100,8 +100,9 @@ font-weight: 700;
 line-height: 1.07;
 letter-spacing: 0.02em;
 text-align: center;
+margin-right: auto;
 margin-bottom: 48px;
-margin-left: 316px;}
+margin-left: auto;}
 
 .button 
 {display: block; min-width: 169px; height: 56px; border: none;
@@ -116,7 +117,7 @@ text-align: center;
 cursor: pointer;
 padding: 16px 32px;
 border-radius: 4px;
-margin-left: 480px;}
+margin-right: auto; margin-left: auto;}
 
 .button:hover {background-color: #404bbf;}
 .button:focus {background-color: #404bbf;}
@@ -224,8 +225,7 @@ row-gap: 48px;}
 .offer-content{box-sizing: border-box; max-width: 360px;
 border: 1px solid #e7e9fc;
 padding: 32px 16px;
-border-top: none;
-margin-bottom: 8px;}
+border-top: none;}
 
 .offer-title
 {color: #2e2f42;
@@ -234,15 +234,14 @@ font-weight: 500;
 line-height: 1.2;
 letter-spacing: 0.02em;
 text-align: left;
-margin-top: 32px; margin-right: auto; margin-bottom: 8px; margin-left: 16px;}
+margin-bottom: 8px;}
 
 .offer-title-text
 {color: #434455;
 font-size: 16px;
 font-weight: 400;
 line-height: 1.5;
-letter-spacing: 0.02em;
-margin-right: auto; margin-bottom: 32px; margin-left: 16px;}
+letter-spacing: 0.02em;}
 
 .wish 
 {background-color: #2e2f42; padding-top: 100px; padding-bottom: 100px;}
